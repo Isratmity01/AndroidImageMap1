@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\Android_Projects\\AndroidImageMap1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\gridmap.png",
+        "source": "E:\\Android_Projects\\AndroidImageMap1\\app\\src\\main\\res\\drawable-nodpi\\gridmap.png"
+    },
+    {
+        "merged": "E:\\Android_Projects\\AndroidImageMap1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\usamap.png",
+        "source": "E:\\Android_Projects\\AndroidImageMap1\\app\\src\\main\\res\\drawable-nodpi\\usamap.png"
+    }
+]
