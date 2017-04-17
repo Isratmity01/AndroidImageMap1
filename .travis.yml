@@ -5,17 +5,14 @@ sudo: false
 notifications:  #Optional
     email:
         - mity.crystal@gmail.com #Add your email address
-        env:
+env:
   matrix:
     - ANDROID_TARGET=android-19 ANDROID_ABI=armeabi-v7a
-    - ANDROID_TARGET=android-21 ANDROID_ABI=armeabi-v7a
-    - ANDROID_TARGET=android-22 ANDROID_ABI=armeabi-v7a
-    - ANDROID_TARGET=android-24 ANDROID_ABI=armeabi-v7a
   global:   #Optional 
-    - ADB_INSTALL_TIMEOUT=10    #Time out to 10 mins
+    - ADB_INSTALL_TIMEOUT=8    #Time out to 10 mins
 
     android:
-    update_sdk: true  #Check for the updates each time you run the build.
+    update_sdk: false  #Check for the updates each time you run the build.
     components:
         - platform-tools
         - tools
@@ -27,9 +24,6 @@ notifications:  #Optional
 
         #system images for emulator
         - sys-img-armeabi-v7a-android-19
-        - sys-img-armeabi-v7a-android-21
-         - sys-img-armeabi-v7a-android-22
-        - sys-img-armeabi-v7a-android-24
 
 before_cache:
     - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
